@@ -15,6 +15,8 @@ public class Main {
             if((bytes[index] & curByte) == curByte && ! set.contains(arr[i])) {
                 set.add(arr[i]);
             }
+            bytes[index] |= curByte;
+        }
 
         return set.size();
     }
